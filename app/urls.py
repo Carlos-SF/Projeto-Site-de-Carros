@@ -11,7 +11,7 @@ from accounts.views import register_view, login_view,logout_view
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login/',login_view, name='login'),
-    path('logaut/',logout_view, name='Logout'),
+    path('logout/',logout_view, name='logout'),
     path('register/', register_view, name='register'),
     path('new_car/',new_car_view, name='new_car'),
     path('cars/', car_view, name='cars_list'),
